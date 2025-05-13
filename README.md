@@ -1,70 +1,83 @@
-# Getting Started with Create React App
+# Decentralized Book Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A **decentralized application (dApp)** built on Ethereum, allowing users to manage and track the books they’ve read. This application leverages **Solidity**, **React**, and **Web3** technologies to provide a secure, transparent, and immutable solution for tracking books.
 
-## Available Scripts
+## 💻 Technologies Used
+- **Solidity**: For writing the smart contract on the Ethereum blockchain.
+- **React.js**: For building the frontend interface of the application.
+- **Ethers.js**: To interact with Ethereum blockchain from the React app.
+- **MetaMask**: For connecting to the Ethereum network and managing accounts.
+- **Remix IDE**: For writing, compiling, and deploying the smart contract to the Ethereum testnet.
 
-In the project directory, you can run:
+## 📦 Prerequisites
 
-### `npm start`
+Before running this project, ensure that you have:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Node.js** and **npm** installed on your machine.
+- **MetaMask** browser extension installed and configured to connect to a testnet (e.g., Goerli, Sepolia).
+- A **Remix IDE** account for deploying and interacting with smart contracts.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## 🚀 Getting Started
 
-### `npm test`
+### 1. Clone the repository
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+```bash
+git clone https://github.com/Harsimran20/decentralized-book-tracker.git
+```
 
-### `npm run build`
+### 2. Install dependencies
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Navigate into the project directory and install the required packages:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+```bash
+cd decentralized-book-tracker
+npm install
+```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### 3. Start the React App
 
-### `npm run eject`
+Start the React app in development mode:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+```bash
+npm start
+```
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Your application should now be live at `http://localhost:3000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### 4. Connect MetaMask
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Once the React app is running, click on **"Connect MetaMask"** to link your Ethereum account. You must have MetaMask installed and connected to a testnet like **Goerli** or **Sepolia**.
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## 📚 Features
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **Add Books**: Add a new book with the title to your collection.
+- **Track Reading Status**: Toggle between **read** and **unread** for each book.
+- **Immutable**: All records are stored on the Ethereum blockchain, making them secure and immutable.
 
-### Code Splitting
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## 🛠️ Smart Contract (Solidity)
 
-### Analyzing the Bundle Size
+### The smart contract includes:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+- **addBook()**: Allows users to add a new book to their collection.
+- **getBooks()**: Retrieves a list of books for the connected user.
+- **toggleReadStatus()**: Allows users to toggle the reading status of a book.
 
-### Making a Progressive Web App
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 💡 Future Improvements
 
-### Advanced Configuration
+- **User Authentication**: Add a more robust authentication system using Ethereum wallets.
+- **Better UI/UX**: Improve the user interface to be more interactive and visually appealing.
+- **Tokenization**: Implement a reward system for tracking books, such as NFT-based achievements.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+## 📝 License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+---
